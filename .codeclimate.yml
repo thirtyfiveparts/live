@@ -1,0 +1,19 @@
+languages:
+  JavaScript: true
+
+plugins:
+  markdownlint:
+    enabled: true
+  eslint:
+    enabled: true
+    config: .eslintrc.js
+    extensions:
+    - .es6
+    - .js
+    - .jsx
+    - .ts
+    - .tsx
+    - .mjs
+
+exclude_patterns:
+  - "**/node_modules/"

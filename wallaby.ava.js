@@ -1,0 +1,1 @@
+module.exports = require('./tools/wallaby/wallaby.ava.js')

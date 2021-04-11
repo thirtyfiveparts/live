@@ -1,0 +1,1 @@
+module.exports = require('./tools/lint-staged/lint-staged.config.js')

@@ -1,0 +1,10 @@
+packages:
+  - '.'
+  - 'tools/**'
+  - 'repos/**'
+  # If we use a custom `modules-dir` for testing with pnpm we must ignore them when looking for packages.
+  - '!**/node_modules_public/**'
+  - '!**/template-monorepo-files'
+  # Filter original packages.
+  - '!**/app-templates/*-orig/**'
+  - '!**/.linked'
