@@ -1,0 +1,16 @@
+{
+  "name": "@live/live-cli.root",
+  "version": "0.1.0",
+  "dependencies": {
+  },
+  "live": {
+    "docusaurus": {
+      "docs": {
+        "folder": "docs"
+      },
+      "enable": true,
+      "include": [],
+      "webpackLoaderExclude": []
+    }
+  }
+}

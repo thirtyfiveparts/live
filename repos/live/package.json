@@ -1,0 +1,31 @@
+{
+  "name": "live-monorepo",
+  "version": "1.0.0",
+  "description": "> Multi-monorepo of all thirtyfive's open source projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "live": {
+    "repo": {
+      "name": "Live",
+      "description": "Open source Live monorepo framework dependencies."
+    },
+    "docusaurus": {
+      "enable": true,
+      "include": [
+        "!**/packages/**"
+      ],
+      "webpackLoaderExclude": [
+        "packages"
+      ]
+    }
+  },
+  "dependencies": {
+    "@live/docusaurus-root-docs": "workspace:^0.1.0",
+    "@live/watchman-wrapper": "workspace:^0.1.0"
+  }
+}

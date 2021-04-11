@@ -1,0 +1,18 @@
+{
+  "name": "@live/app-root",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "",
+    "build": ""
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-simple"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@live/babel-preset-live-node-simple": "^0.1.0",
+    "@live/log": "^0.1.0"
+  }
+}

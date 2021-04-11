@@ -1,0 +1,8 @@
+{
+  "name": "@live/lint-staged-config",
+  "version": "0.1.0",
+  "main": "lint-staged.config.live.js",
+  "dependencies": {
+
+  }
+}

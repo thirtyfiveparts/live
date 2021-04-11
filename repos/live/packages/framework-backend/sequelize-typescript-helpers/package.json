@@ -1,0 +1,23 @@
+{
+  "name": "@live/sequelize-typescript-helpers",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node bin/cli.ts"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.2.9",
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "sequelize-typescript": "npm:@vjpr/sequelize-typescript",
+    "type-graphql": "^1.1.1",
+    "typedi": "^0.8.0"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  }
+}

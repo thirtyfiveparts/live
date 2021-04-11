@@ -1,0 +1,15 @@
+{
+  "name": "@live/logger",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "debug": "^4.3.1",
+    "sql-formatter": "^2.3.3",
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  }
+}

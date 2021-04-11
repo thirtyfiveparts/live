@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="cmake-js &amp;&amp; node bin/index.js" type="CLionExternalRunConfiguration" factoryName="Application" PROGRAM_PARAMS="bin/index.js" REDIRECT_INPUT="false" ELEVATE="false" WORKING_DIR="file://$ProjectFileDir$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="addon" TARGET_NAME="cmake-js debug" CONFIG_NAME="cmake-js debug" RUN_PATH="$USER_HOME$/nvm/versions/node/v14.2.0/bin/node">
+    <method v="2">
+      <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="conan-install" run_configuration_type="js.build_tools.npm" />
+    </method>
+  </configuration>
+</component>

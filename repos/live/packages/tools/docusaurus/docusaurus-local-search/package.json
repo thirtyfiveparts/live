@@ -1,0 +1,11 @@
+{
+  "name": "@live/docusaurus-local-search",
+  "version": "0.1.0",
+  "dependencies": {
+    "autocomplete.js": "^0.38.0",
+    "classnames": "^2.2.6",
+    "hogan.js": "^3.0.2",
+    "lunr": "^2.3.9",
+    "lunr-languages": "^1.4.0"
+  }
+}

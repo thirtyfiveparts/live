@@ -1,0 +1,28 @@
+{
+  "name": "@live/docusaurus-plugin-live",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -w"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "@babel/runtime": "^7.10.2",
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "find-packages": "^7.0.6",
+    "find-up": "^4.1.0",
+    "regenerator-runtime": "^0.13.5",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0",
+    "@types/node": "^14.0.12"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  }
+}

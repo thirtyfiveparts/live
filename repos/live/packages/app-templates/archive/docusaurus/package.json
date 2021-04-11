@@ -1,0 +1,37 @@
+{
+  "name": "@live/app-template-docosaurus",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-syntax-dynamic-import": "*",
+    "@babel/preset-env": "^7.9.6",
+    "@docusaurus/core": "^2.0.0-alpha.55",
+    "@docusaurus/mdx-loader": "^2.0.0-alpha.55",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.55",
+    "@mdx-js/react": "^1.6.1",
+    "classnames": "^2.2.6",
+    "infima": "^0.2.0-alpha.11",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "remark-admonitions": "^1.2.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@live/app-templates.expo",
+  "main": "./AppEntry.js",
+  "private": true,
+  "scripts": {
+    "expo": "tools/expo.sh",
+    "start": "tools/expo.sh start",
+    "android": "tools/expo.sh start --android",
+    "ios": "tools/expo.sh start --ios",
+    "web": "tools/expo.sh start --web",
+    "eject": "tools/expo.sh eject"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.2",
+    "@live/pnpm-react-native-helper-expo": "workspace:^0.1.0",
+    "expo": "~40.0.0",
+    "expo-status-bar": "~1.0.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+    "react-native-web": "~0.13.12",
+    "metro": "^0.59.0"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "@types/react": "~16.9.35",
+    "@types/react-dom": "~16.9.8",
+    "@types/react-native": "~0.63.3",
+    "babel-preset-expo": "^8.3.0",
+    "expo-cli": "^4.3",
+    "typescript": "~3.9.5"
+  },
+  "live": {
+    "template": {
+      "exclude": [
+        "docs-shared",
+        "instructions.md",
+        "archive"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@live/find-duplicate-pkgs",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "description": "Template for creating cli tools.",
+  "scripts": {
+    "start": "node bin/index.js",
+    "dev": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "babel src -d lib -s -w -x .ts,.js",
+    "build": "babel src -d lib -s --delete-dir-on-start -x .ts,.js",
+    "build-old": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'"
+  },
+  "bin": {
+    "find-duplicate-pkgs": "bin/index.js"
+  },
+  "binDescription": {
+    "find-duplicate-pkgs": "Example cli tool."
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "find-up": "^5.0.0",
+    "fs-extra": "^9.1.0",
+    "globby": "^11.0.3"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    },
+    "template": {
+      "exclude": [
+        "docs-shared",
+        "instructions.md"
+      ]
+    }
+  }
+}

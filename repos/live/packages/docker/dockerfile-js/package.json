@@ -1,0 +1,21 @@
+{
+  "name": "dockerfile-js",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "bin": {
+    "dockerfile-js": "bin/index.js"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.3.1",
+    "dargs": "^6.0.0",
+    "find-up": "^3.0.0",
+    "lodash": "^4.17.11",
+    "take-while": "^1.0.0",
+    "yargs-parser": "^13.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

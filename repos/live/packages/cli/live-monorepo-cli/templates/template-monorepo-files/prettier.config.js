@@ -1,0 +1,1 @@
+module.exports = require('./tools/prettier/prettier.config.js')

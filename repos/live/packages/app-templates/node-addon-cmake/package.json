@@ -1,0 +1,48 @@
+{
+  "name": "@live/app-templates.node-addon-cmake",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "description": "Template for creating cli tools.",
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "compile": "./scripts/install.sh",
+    "install-electron": "cmake-js --runtime=electron compile",
+    "debug-configure": "cmake-js print-configure --debug",
+    "conan-install": "mkdir -p build-conan && cd build-conan && conan install ..",
+    "appcode-open": "appcode build/addon.xcodeproj",
+    "carthage": "./scripts/carthage.sh"
+  },
+  "bin": {
+    "live-cli-template": "bin/index.js"
+  },
+  "binDescription": {
+    "live-cli-template": "Example cli tool."
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/cmakejs-to-cmake": "workspace:^0.0.1",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "bindings": "^1.5.0",
+    "enquirer": "^2.3.0",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0",
+    "cmake-js": "^6.1.0",
+    "node-addon-api": "^3.1.0"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": true,
+      "include": ["!**/Carthage/**"]
+    }
+  }
+}

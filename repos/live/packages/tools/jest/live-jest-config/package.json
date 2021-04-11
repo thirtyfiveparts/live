@@ -1,0 +1,8 @@
+{
+  "name": "@live/jest-config",
+  "version": "0.1.0",
+  "main": "jest.config.live.js",
+  "dependencies": {
+    "jest-config": "^26.0.1"
+  }
+}

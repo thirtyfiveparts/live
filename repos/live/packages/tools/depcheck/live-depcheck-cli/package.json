@@ -1,0 +1,29 @@
+{
+  "name": "@live/depcheck",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@live/get-workspace-pkgs": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "^0.1.3",
+    "@live/tsconfig": "*",
+    "@pnpm/find-workspace-packages": "^2.3.26",
+    "chalk": "^4.1.0",
+    "depcheck": "^1.3.1",
+    "lodash": "^4.17.20",
+    "yargs": "^16.1.1"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

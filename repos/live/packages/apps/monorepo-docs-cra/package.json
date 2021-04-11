@@ -1,0 +1,48 @@
+{
+  "name": "monorepo-docs-cra-client",
+  "description": "Easily navigate and search the docs for the packages in your monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@rebass/grid": "^6.0.0-7",
+    "apollo-boost": "^0.1.27",
+    "github-markdown-css": "^2.10.0",
+    "http-proxy-middleware": "^0.19.1",
+    "react": "^16.8.6",
+    "react-apollo-hooks": "^0.4.5",
+    "react-dom": "^16.8.6",
+    "react-instantsearch-dom": "^5.3.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "3.3.1",
+    "remark": "^10.0.1",
+    "remark-react": "^5.0.1",
+    "styled-components": "^4.1.3",
+    "unist-util-visit": "^1.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "live": {
+    "app": true,
+    "stacks": ["monorepo-docs"]
+  }
+}

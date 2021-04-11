@@ -1,0 +1,9 @@
+{
+  "name": "@live/docusaurus-search",
+  "version": "0.1.0",
+  "main": "src/SearchBar/index.js",
+  "dependencies": {
+    "@docsearch/react": "^1.0.0-alpha.14",
+    "@docusaurus/theme-search-algolia": "*"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "index_name": "thirtyfive-docs-dev",
+  "start_urls": [
+    {
+      "url": "http://host.docker.internal/thirtyfive",
+      "tags": [
+        "docs"
+      ]
+    }
+  ],
+  "js_render": true,
+  "selectors": {
+    "lvl0": "h1",
+    "lvl1": "h2",
+    "lvl2": "FIXME h3",
+    "lvl3": "FIXME h4",
+    "lvl4": "FIXME h5",
+    "lvl5": "FIXME h6",
+    "text": "FIXME p, FIXME li"
+  }
+}

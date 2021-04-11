@@ -1,0 +1,6 @@
+{
+  "name": "@live/babel-root-config",
+  "version": "0.0.2",
+  "description": "",
+  "main": "babel.config.live.js"
+}

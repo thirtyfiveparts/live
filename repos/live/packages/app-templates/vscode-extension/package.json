@@ -1,0 +1,65 @@
+{
+  "name": "@live/template.vscode-extension",
+  "version": "0.1.0",
+  "main:old": "src/index.ts",
+  "main": "bin/extension.js",
+  "description": "VSCode Extension for Buckets",
+  "publisher": "ThirtyFive",
+  "scripts": {
+    "start": "node bin/extension.js",
+    "dev": "node bin/extension.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "babel src -d lib -s -w -x .ts,.js",
+    "build": "babel src -d lib -s --delete-dir-on-start -x .ts,.js",
+    "build-old": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'"
+  },
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.helloWorld"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "bin": {
+    "live-cli-template": "bin/extension.js"
+  },
+  "binDescription": {
+    "live-cli-template": "Example cli tool."
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0",
+    "@types/vscode": "^1.54.0",
+    "vscode": "^1.1.37"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    },
+    "template": {
+      "exclude": [
+        "docs-shared",
+        "instructions.md"
+      ]
+    }
+  }
+}

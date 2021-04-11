@@ -1,0 +1,42 @@
+{
+  "name": "tools.config",
+  "version": "0.1.0",
+  "description": "TODO",
+  "main": "src/index.ts",
+  "bin": {
+    "live-cli-template": "bin/index.js",
+    "tools-config": "bin/index.js"
+  },
+  "scripts": {
+    "dev": "babel src -d lib -s -w -x .ts,.js",
+    "build": "babel src -d lib -s --delete-dir-on-start -x .ts,.js",
+    "build-old": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "start": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "enquirer": "^2.3.0",
+    "find-up": "^5.0.0",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0"
+  },
+  "binDescription": {
+    "live-cli-template": "Example cli tool.",
+    "tools-config": "TODO"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

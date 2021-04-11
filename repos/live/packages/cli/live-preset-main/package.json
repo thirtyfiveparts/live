@@ -1,0 +1,22 @@
+{
+  "name": "@live/preset-main",
+  "version": "0.1.0",
+  "description": "TODO",
+  "main": "src/index.ts",
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "*"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

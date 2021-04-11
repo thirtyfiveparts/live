@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "foo"
+version = "0.1.0"
+description = ""
+authors = ["Vaughan Rouesnel <vrouesnel@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+baz = {path = "../baz", develop = true}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"

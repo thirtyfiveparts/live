@@ -1,0 +1,94 @@
+/*
+
+This file is extended by every package's local `tsconfig.json`.
+
+// TODO: Maybe we put the config without the src/out dirs.
+
+# Babel
+
+This file is not used when running the code as we use @babel/typescript.
+
+It is used by:
+
+- IntelliJ for type-checking only.
+- Building declarations for automatic api doc generation.
+
+*/
+{
+  // File Inclusion
+  //////////////////////////////////////////////////////////////////////////////
+
+  // This doesn't seem to work.
+  // EDIT: Seems to work now...won't fix compilation issues though because we use Babel.
+  "extends": "./tsconfig.base.json",
+  // --
+
+  "exclude": ["node_modules", "dist"],
+
+  //////////////////////////////////////////////////////////////////////////////
+
+  "compilerOptions": {
+    // Project Options
+    ////////////////////////////////////////////////////////////////////////////
+
+    "declaration": true,
+
+    // Needed for generating `.d.ts` for docs.
+    "emitDeclarationOnly": true,
+
+    // Skip type checking of all declaration files (*.d.ts).
+    // We don't want to skip because it helps us see issues such as:
+    //   `const enum` + `--isolated-module` issue.
+    //    See https://ncjamieson.com/dont-export-const-enums/.
+    //    See: https://github.com/microsoft/TypeScript/issues/20703#issuecomment-437291032
+     "skipLibCheck": false,
+
+    "lib": ["es6", "es2015", "dom"],
+
+    "composite": true,
+
+    // Nee
+    "removeComments": false,
+
+    // See: https://github.com/microsoft/TypeScript/issues/36917
+    //"noEmit": true,
+
+    // Experimental
+    ////////////////////////////////////////////////////////////////////////////
+
+    // NOTE: A package in IntelliJ threw a warning about this.
+    //   It should be handled by the root config...
+    "experimentalDecorators": true,
+
+    // NOTE: Babel doesn't read this setting when compiling TS.
+    //   For babel use: https://github.com/leonardfactory/babel-plugin-transform-typescript-metadata
+    "emitDecoratorMetadata": true,
+
+    ////////////////////////////////////////////////////////////////////////////
+
+    // Module Resolution
+    ////////////////////////////////////////////////////////////////////////////
+
+    // By default tsc includes all `node_modules/@types` anywhere in the monorepo.
+    "typeRoots": ["./node_modules/@types"],
+
+    // Fixes `import Sequelize from 'sequelize'`.
+    "allowSyntheticDefaultImports": true,
+
+    // NOTE: We don't use `baseUrl` here because its looks for it relative to the location of THIS config file, not our packages. (rootDir might do the same).
+    // "baseUrl": "src",
+    // --
+
+    // Allows `import foo from '@src/modules/foo`.
+    // NOTE: Synced with: `babel-preset-live-node-basic` + `eslint-config-live` + `tsconfig-pkg`.
+    "paths": {
+      "@src/*": ["*"]
+      // TODO: Disable from the depe above too
+      //"modules/*": ["modules/*"],
+      // --
+    }
+    // --
+
+    ////////////////////////////////////////////////////////////////////////////
+  }
+}

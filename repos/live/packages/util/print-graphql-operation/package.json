@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "indent": "^0.0.2",
+    "is-empty-object": "^1.1.1",
+    "stringify-object": "^3.2.2"
+  },
+  "devDependencies": {
+    "esm": "^3.0.72"
+  },
+  "peerDependencies": {
+    "graphql": "^15.4.0"
+  },
+  "name": "print-graphql-operation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

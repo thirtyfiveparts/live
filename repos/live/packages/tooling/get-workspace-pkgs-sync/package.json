@@ -1,0 +1,20 @@
+{
+  "name": "get-workspace-pkgs-sync",
+  "version": "0.1.0",
+  "dependencies": {
+    "@live/get-workspace-pkgs": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.3",
+    "@pnpm/filter-workspace-packages": "^2.3.7",
+    "@pnpm/find-workspace-dir": "^1.0.1",
+    "@pnpm/find-workspace-packages": "^2.3.26",
+    "fs-extra": "^9.1.0"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-simple"
+    ]
+  },
+  "devDependencies": {
+    "@live/babel-preset-live-node-simple": "workspace:^0.1.0"
+  }
+}

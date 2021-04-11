@@ -1,0 +1,59 @@
+{
+  "index_name": "thirtyfive-docs-dev",
+  "start_urls": [
+    {
+      "url": "http://host.docker.internal.dev/",
+      "tags": [
+        "docs"
+      ]
+    },
+    {
+      "url": "http://host.docker.internal/blog",
+      "tags": [
+        "blog"
+      ]
+    }
+  ],
+  "js_render": true,
+  "sitemap_alternate_links": true,
+  "stop_urls": [
+    "/help",
+    "/users"
+  ],
+  "selectors": {
+    "lvl0": {
+      "selector": "//*[contains(@class,'navGroups')]//*[contains(@class,'navListItemActive')]/preceding::h3[1]",
+      "type": "xpath",
+      "global": true,
+      "default_value": "Blog"
+    },
+    "lvl1": ".post h1",
+    "lvl2": ".post h2",
+    "lvl3": ".post h3",
+    "lvl4": ".post h4",
+    "text": ".post article p, .post article li"
+  },
+  "selectors_exclude": [
+    ".hash-link"
+  ],
+  "custom_settings": {
+    "attributesForFaceting": [
+      "language",
+      "version",
+      "tags",
+      "type"
+    ],
+    "attributesToRetrieve": [
+      "hierarchy",
+      "content",
+      "anchor",
+      "url",
+      "url_without_anchor",
+      "type"
+    ]
+  },
+  "conversation_id": [
+    "415526327"
+  ],
+  "nb_hits": 40400
+}

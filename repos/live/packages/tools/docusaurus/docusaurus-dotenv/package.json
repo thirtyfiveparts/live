@@ -1,0 +1,28 @@
+{
+  "name": "@live/docusaurus-dotenv",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel src -d lib -s -w --extensions .ts,.tsx",
+    "build": "babel src -d lib -s --extensions .ts,.tsx --delete-dir-on-start"
+  },
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "dotenv-webpack": "1.7.0"
+  },
+  "devDependencies": {
+    "@docusaurus/types": "2.0.0-alpha.37",
+    "@types/dotenv-webpack": "1.7.0",
+    "@live/tsconfig": "*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

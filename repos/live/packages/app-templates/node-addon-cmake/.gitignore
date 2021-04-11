@@ -1,0 +1,6 @@
+archive/
+node_modules/
+build/
+build-conan/
+cmake-build-debug/
+Carthage/

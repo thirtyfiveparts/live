@@ -1,0 +1,23 @@
+{
+  "name": "@live/template-monorepo-sync",
+  "version": "0.1.0",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "chalk": "^4.0.0",
+    "color": "^3.1.2",
+    "cpy": "^8.1.0",
+    "del": "^5.1.0",
+    "find-up": "^5.0.0",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
+    "globby": "^11.0.1",
+    "lodash": "^4.17.15",
+    "tildify": "^2.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  }
+}

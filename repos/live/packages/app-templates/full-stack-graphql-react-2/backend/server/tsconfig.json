@@ -1,0 +1,10 @@
+{
+  "extends": "./node_modules/@live/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    // NOTE: `baseUrl` must be defined here because it searches for it relative to this config file.
+    "baseUrl": "src",
+    // Fixes: type-graphql = Unable to resolve signature of method decorator when called as an expression
+    "target": "ES2016"
+  }
+}

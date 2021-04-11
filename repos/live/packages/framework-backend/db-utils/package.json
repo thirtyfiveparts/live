@@ -1,0 +1,30 @@
+{
+  "name": "@live/db-utils",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@live/config": "workspace:^0.1.0",
+    "@live/logger": "workspace:^0.1.0",
+    "@live/wallaby-db": "workspace:^0.1.0",
+    "@live/tsconfig": "workspace:^0.1.0",
+    "await-to": "^0.1.0",
+    "await-to-js": "^2.1.1",
+    "chalk": "^4.1.0",
+    "connection-string": "^4.3.1",
+    "dedent": "^0.7.0",
+    "knex": "^0.21.12",
+    "lodash": "^4.17.20",
+    "sequelize": "^6.3.5",
+    "sequelize-typescript": "npm:@vjpr/sequelize-typescript",
+    "sql-formatter": "^2.3.3",
+    "yargs": "^16.0.3"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "devDependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0"
+  }
+}

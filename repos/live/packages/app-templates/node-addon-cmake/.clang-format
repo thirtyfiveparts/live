@@ -1,0 +1,73 @@
+---
+Language:        Cpp
+# BasedOnStyle:  Google
+AlignAfterOpenBracket: false
+AccessModifierOffset: -1
+ConstructorInitializerIndentWidth: 4
+AlignEscapedNewlinesLeft: true
+AlignTrailingComments: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+AlwaysBreakAfterDefinitionReturnType: false
+AlwaysBreakTemplateDeclarations: true
+AlwaysBreakBeforeMultilineStrings: true
+BreakBeforeBinaryOperators: None
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializersBeforeComma: false
+BinPackParameters: true
+BinPackArguments: true
+ColumnLimit:     120
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+DerivePointerAlignment: true
+ExperimentalAutoDetectBinPacking: false
+IndentCaseLabels: true
+IndentWrappedFunctionNames: false
+IndentFunctionDeclarationAfterType: false
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: true
+NamespaceIndentation: None
+ObjCSpaceAfterProperty: false
+ObjCSpaceBeforeProtocolList: false
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyBreakComment: 300
+PenaltyBreakString: 1000
+PenaltyBreakFirstLessLess: 120
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 200
+PointerAlignment: Left
+SpacesBeforeTrailingComments: 1
+Cpp11BracedListStyle: true
+Standard:        Auto
+IndentWidth:     2
+TabWidth:        8
+UseTab:          Never
+BreakBeforeBraces: Attach
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpacesInAngles:  false
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+SpaceAfterCStyleCast: false
+SpacesInContainerLiterals: true
+SpaceBeforeAssignmentOperators: true
+ContinuationIndentWidth: 2
+CommentPragmas:  '^ IWYU pragma:'
+ForEachMacros:   [ foreach, Q_FOREACH, BOOST_FOREACH ]
+SpaceBeforeParens: ControlStatements
+DisableFormat:   false
+---
+Language: JavaScript
+# Use 100 columns for JS.
+ColumnLimit: 100
+IndentWidth:     2
+UseTab:          Never
+SpacesInContainerLiterals: false
+---
+Language: Proto
+# Don't format .proto files.
+DisableFormat: true
+...

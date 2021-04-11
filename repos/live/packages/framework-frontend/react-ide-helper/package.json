@@ -1,0 +1,19 @@
+{
+  "name": "@live/react-ide-helper",
+  "version": "0.1.0",
+  "dependencies": {
+    "@use-it/event-listener": "^0.1.5",
+    "axios": "^0.20.0"
+  },
+  "peerDependencies": {
+    "react": "^16.14.0"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@live/babel-preset-react": "workspace:^0.1.0"
+  }
+}

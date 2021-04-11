@@ -1,0 +1,1 @@
+export {WatchmanPlugin} from './WatchmanPlugin'

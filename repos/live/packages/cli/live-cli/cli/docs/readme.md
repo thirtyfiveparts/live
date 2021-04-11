@@ -1,0 +1,3 @@
+---
+hide_title: true
+---

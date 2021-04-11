@@ -1,0 +1,46 @@
+{
+  "name": "@live/barrelsby-watcher",
+  "version": "0.1.0",
+  "description": "TODO",
+  "main": "src/index.ts",
+  "bin": {
+    "barrelsby-watcher": "bin/index.js"
+  },
+  "scripts": {
+    "build": "babel src -d lib -s --delete-dir-on-start -x .ts,.js",
+    "build-dev": "babel src -d lib -s -w -x .ts,.js",
+    "build-old": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "dev": "node bin/index.js",
+    "start": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/get-workspace-pkgs": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "@live/watchman-wrapper": "workspace:^0.1.0",
+    "barrelsby": "npm:@vjpr/barrelsby@2.2.0-vjpr.0",
+    "chalk": "^4.1.0",
+    "debounce-promise": "^3.1.2",
+    "fs-extra": "^9.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0"
+  },
+  "binDescription": {
+    "live-cli-template": "Example cli tool.",
+    "barrelsby-watcher": "TODO"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@live/babel-preset-live-react",
+  "version": "0.1.0",
+  "dependencies": {
+    "@babel/preset-react": "^7.10.1",
+    "@live/babel-preset-live-node-simple": "workspace:^0.1.0"
+  }
+}

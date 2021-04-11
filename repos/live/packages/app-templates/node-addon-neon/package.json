@@ -1,0 +1,12 @@
+{
+  "name": "node-addon-neon",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "neon-cli": "^0.7.0"
+  },
+  "scripts": {
+    "disabled:install": "neon build"
+  }
+}

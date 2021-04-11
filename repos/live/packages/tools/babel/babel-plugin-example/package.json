@@ -1,0 +1,20 @@
+{
+  "name": "@live/babel-plugin-example",
+  "version": "0.1.0",
+  "main": "es5.js",
+  "scripts": {
+    "dev": "babel src -d lib -s -w",
+    "build": "babel src -d lib -s --delete-dir-on-start"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-simple"
+    ]
+  },
+  "dependencies": {
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@live/babel-preset-live-node-simple": "^0.1.0"
+  }
+}

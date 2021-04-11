@@ -1,0 +1,18 @@
+{
+  "name": "@live/log",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "babel src -d lib -s -w",
+    "build": "babel src -d lib -s --delete-dir-on-start"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-simple"
+    ]
+  },
+  "dependencies": {
+    "@live/babel-preset-live-node-simple": "^0.1.0",
+    "chalk": "^4.1.0",
+    "debug-env": "^1.1.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@live/docusaurus-plugin",
+  "version": "0.1.0",
+  "dependencies": {
+    "find-up": "^5.0.0",
+    "get-workspace-pkgs-sync": "workspace:^0.1.0",
+    "webpack-config-dump-plugin": "^3.0.1"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0"
+  }
+}

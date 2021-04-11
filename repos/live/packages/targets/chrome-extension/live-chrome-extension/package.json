@@ -1,0 +1,18 @@
+{
+  "name": "@live/chrome-extension",
+  "version": "0.1.0",
+  "dependencies": {
+    "@live/webpack-config": "workspace:^0.1.0"
+  },
+  "peerDependency": {
+    "webpack": "*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-simple"
+    ]
+  },
+  "devDependencies": {
+    "@live/babel-preset-live-node-simple": "workspace:^0.1.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@live/get-workspace-pkgs",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@pnpm/filter-workspace-packages": "^2.3.7",
+    "@pnpm/find-workspace-dir": "^2.0.0",
+    "@pnpm/find-workspace-packages": "^2.3.26",
+    "find-up": "^5.0.0",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": true
+    }
+  }
+}

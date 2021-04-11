@@ -1,0 +1,8 @@
+{
+  "name": "@live/cmakejs-to-cmake",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "yargs-parser": "^20.2.4"
+  }
+}

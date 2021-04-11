@@ -1,0 +1,8 @@
+{
+  "name": "@live/husky-config",
+  "version": "0.1.0",
+  "main": "husky.config.live.js",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

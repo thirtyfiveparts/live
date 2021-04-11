@@ -1,0 +1,8 @@
+{
+  "name": "@live/ava-config",
+  "version": "0.1.0",
+  "main": "ava.config.live.js",
+  "dependencies": {
+
+  }
+}

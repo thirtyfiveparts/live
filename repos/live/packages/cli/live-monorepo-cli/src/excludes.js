@@ -1,0 +1,26 @@
+export default [
+  '.DS_Store',
+  '.git',
+  '.git-subrepo',
+  'pnpm-lock.yaml',
+  'node_modules',
+  '**/node_modules/**',
+  'flow-typed',
+  'packages',
+  'repos',
+  '.vagrant',
+  'archive',
+  'tmp',
+  'build',
+  '*.log',
+  // We must ignore `.idea` because the excludes and name of the project will be wrong.
+  '.idea',
+  '.env',
+  'babel-manifest.json',
+  '.docker-trees',
+  // TODO(vjpr): We only want to copy the symlink, not the dir contents...
+  //'.dev/config/*',
+  '.dev',
+  '.vjpr',
+  'package.json',
+]

@@ -1,0 +1,26 @@
+{
+  "name": "@live/docusaurus-auto-sidebar",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "change-case": "^4.1.2",
+    "directory-tree": "^2.2.5",
+    "flat": "^5.0.2",
+    "globby": "^11.0.1",
+    "gray-matter": "^4.0.2"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

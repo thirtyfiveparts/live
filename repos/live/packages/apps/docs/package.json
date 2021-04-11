@@ -1,0 +1,67 @@
+{
+  "name": "@live/monorepo-docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "NODE_OPTIONS=--max-old-space-size=6144 docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "clean": "rimraf .docusaurus node_modules/.cache"
+  },
+  "dependencies": {
+    "@babel/register": "^7.12.1",
+    "@docusaurus/core": "2.0.0-alpha.70",
+    "@docusaurus/plugin-sitemap": "^2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
+    "@docusaurus/theme-search-algolia": "^2.0.0-alpha.70",
+    "@easyops-cn/docusaurus-search-local": "^0.14.2",
+    "@live/babel-plugin-react-element-info": "workspace:^0.1.0",
+    "@live/dev-proxy": "workspace:^0.1.0",
+    "@live/docusaurus-dotenv": "workspace:^0.1.0",
+    "@live/docusaurus-local-search": "workspace:^0.1.0",
+    "@live/docusaurus-preset-monorepo-docs": "workspace:^0.1.0",
+    "@live/docusaurus-search": "workspace:^0.1.0",
+    "@live/react-ide-helper": "workspace:^0.1.0",
+    "@mdx-js/react": "^1.6.21",
+    "@tailwindcss/typography": "^0.3.1",
+    "@thirtyfive/blog": "workspace:^0.1.0",
+    "babel-plugin-macros": "^3.0.1",
+    "clsx": "^1.1.1",
+    "docusaurus-lunr-search": "^2.1.9",
+    "dotenv": "^8.2.0",
+    "get-workspace-pkgs-sync": "workspace:^0.1.0",
+    "lunr": "^2.3.9",
+    "lunr-languages": "^1.4.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.2.1",
+    "twin.macro": "^2.0.8",
+    "url-loader": "^4.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "^7.12.7",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": true
+    }
+  }
+}

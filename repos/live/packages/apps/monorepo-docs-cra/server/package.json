@@ -1,0 +1,46 @@
+{
+  "name": "monorepo-docs-cra-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-babel": "nodemon --exec 'babel-node index.js'",
+    "watch": "nodemon --exec 'node index.js'",
+    "start-babel": "babel-node index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "apollo-server": "^2.3.1",
+    "eres": "^1.0.1",
+    "find-packages": "^2.2.0",
+    "find-up": "^3.0.0",
+    "github-markdown-css": "^3.0.1",
+    "graphql": "^15.4.0",
+    "koa": "^2.7.0",
+    "koa-route": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-static-server": "^1.4.0",
+    "react-apollo-hooks": "^0.3.0",
+    "remark": "^10.0.1",
+    "remark-html": "^9.0.0",
+    "trike": "^1.1.3"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "app": true,
+    "stacks": [
+      "monorepo-docs"
+    ]
+  }
+}

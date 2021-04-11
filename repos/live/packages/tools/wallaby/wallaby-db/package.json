@@ -1,0 +1,16 @@
+{
+  "name": "@live/wallaby-db",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "devDependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0"
+  }
+}

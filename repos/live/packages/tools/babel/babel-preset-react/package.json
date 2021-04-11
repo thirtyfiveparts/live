@@ -1,0 +1,11 @@
+{
+  "name": "@live/babel-preset-react",
+  "version": "0.1.0",
+  "dependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "@live/babel-plugin-react-element-info": "workspace:^0.1.0",
+    "@live/babel-preset-basic": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "babel-plugin-import": "^1.13.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "@live/remark-github-modern",
+  "version": "0.1.0",
+  "description": "TODO",
+  "main": "src/index.ts",
+  "bin": {
+    "live-cli-template": "bin/index.js",
+    "remark-github": "bin/index.js"
+  },
+  "scripts": {
+    "build": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'",
+    "start": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "enquirer": "^2.3.0",
+    "git-url-parse": "^11.4.4",
+    "mdast-util-find-and-replace": "^1.1.1",
+    "mdast-util-to-string": "^2.0.0",
+    "read-pkg": "^5.2.0",
+    "read-pkg-up": "^7.0.1",
+    "unist-util-visit": "^2.0.3",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0"
+  },
+  "binDescription": {
+    "live-cli-template": "Example cli tool.",
+    "remark-github": "TODO"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

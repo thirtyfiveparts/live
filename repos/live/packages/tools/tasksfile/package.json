@@ -1,0 +1,15 @@
+{
+  "name": "@live/tasksfile-config",
+  "version": "0.1.0",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@live/cypress": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "^0.1.3",
+    "tasksfile": "^5.1.1"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  }
+}

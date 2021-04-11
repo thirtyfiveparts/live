@@ -1,0 +1,32 @@
+{
+  "name": "@live/cli-global",
+  "version": "0.1.0",
+  "bin": {
+    "lives": "bin/lives.es5.js",
+    "live": "bin/live.es5.js"
+  },
+  "scripts": {
+    "dev": "babel src -d lib -s -w -x .js,.ts",
+    "build": "babel src -d lib -s -x .js,.ts --delete-dir-on-start"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@live/babel-preset-live-node-simple": "workspace:^0.1.0",
+    "@live/cli-helper": "workspace:^0.1.0",
+    "debug": "^3.1.0",
+    "execa": "^1.0.0",
+    "find-up": "^3.0.0",
+    "hard-rejection": "^1.0.0",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-plugin-module-resolver": "^3.1.1"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-simple"
+    ]
+  }
+}

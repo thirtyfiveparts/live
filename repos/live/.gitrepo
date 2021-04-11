@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/thirtyfiveparts/live-public-subrepo
+	branch = main
+	commit = e23764f77c1ac0434e9d6117174381d9f314b7d9
+	parent = 0bdc5a6b1fcf2def2b9e8ef8b01160c83bd36b42
+	method = merge
+	cmdver = 0.4.3

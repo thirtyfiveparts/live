@@ -1,0 +1,1 @@
+module.exports = {extends: ['./tools/eslint/.eslintrc.js']}

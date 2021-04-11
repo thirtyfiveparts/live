@@ -1,0 +1,25 @@
+{
+  "name": "@live/migrate",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@live/logger": "workspace:^0.1.0",
+    "@live/db-utils": "workspace:^0.1.0",
+    "@live/tsconfig": "workspace:^0.1.0",
+    "await-to": "^0.1.0",
+    "chalk": "^4.1.0",
+    "dedent": "^0.7.0",
+    "lodash": "^4.17.20",
+    "prompt-confirm": "^2.0.4",
+    "umzug": "^2.3.0",
+    "yargs": "^16.1.1"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "devDependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0"
+  }
+}

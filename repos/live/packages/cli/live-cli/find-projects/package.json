@@ -1,0 +1,30 @@
+{
+  "name": "@live/find-projects",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@live/cli-core": "workspace:^0.1.0",
+    "chalk": "^4.1.0",
+    "change-case": "^4.1.2",
+    "env-var": "^7.0.0",
+    "find-cache-dir": "^3.3.1",
+    "load-json-file": "^6.2.0",
+    "lodash": "^4.17.20",
+    "path-is-inside": "^1.0.2",
+    "write-json-file": "^4.3.0"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

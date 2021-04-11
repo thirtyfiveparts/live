@@ -1,0 +1,34 @@
+{
+  "name": "@live/app-templates.core.api",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "dependencies": {
+    "@live/sequelize-typescript-helpers": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@sidekicks/core.db": "workspace:^0.1.0",
+    "@live/tsconfig": "*",
+    "@live/simple-cli-helper": "^0.1.3",
+    "airtable": "^0.10.1",
+    "bcryptjs": "^2.4.3",
+    "graphql": "^15.4.0",
+    "graphql-passport": "^0.6.3",
+    "lodash": "^4.17.20",
+    "natural": "^2.1.5",
+    "sequelize-typescript": "npm:@vjpr/sequelize-typescript@^1.1.0-vjpr.0",
+    "type-graphql": "^1.1.1",
+    "typedi": "^0.8.0"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

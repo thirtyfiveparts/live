@@ -1,0 +1,17 @@
+{
+  "name": "event-kit-decorator",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "description": "",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "event-kit": "^2.4.0",
+    "lodash": "^4.17.4",
+    "rxjs": "^5.5.2"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  }
+}

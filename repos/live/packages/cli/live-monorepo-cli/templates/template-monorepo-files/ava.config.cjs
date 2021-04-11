@@ -1,0 +1,1 @@
+module.exports = require('./tools/ava/ava.config.js')

@@ -1,0 +1,48 @@
+{
+  "name": "@org/monorepo",
+  "description": "Monorepo bootstrapped by Live",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "ava",
+    "test:ava": "ava",
+    "test:jest": "jest",
+    "lint:mdlint": "markdownlint -c config/tools/markdownlint/markdownlint.config.js",
+    "lint:eslint": "./node_modules/config/tools/node_modules/@live/eslint-config/scripts/eslint.sh",
+    "lint:eslint:fix": "./node_modules/config/tools/node_modules/@live/eslint-config/scripts/eslint-fix.sh",
+    "lint:ts": "tsc -p tsconfig.json --noEmit",
+    "lint:docs": "npx markdownlint README.md",
+    "format": "prettier --write '**/*.{ts,js}'",
+    "commitlint-cli": "./node_modules/.bin/commit",
+    "template-monorepo-sync": "pnpm exec --filter @live/template-monorepo-sync node .",
+    "preinstall": "npx only-allow pnpm",
+    "delete-node-modules": "pnpm -r exec -- rm -rf node_modules || false",
+    "delete-lib": "pnpm -r exec -- rm -rf lib || false",
+    "wallaby:write-env": "echo \"WALLABY_OPTS=$@\" > tmp/wallaby.env"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@live/tsconfig": "^0.1.0",
+    "jest-config": "^26.0.1"
+  },
+  "devDependencies": {
+    "@ava/babel": "^1.0.1",
+    "@babel/preset-env": "^7.10.2",
+    "@commitlint/prompt-cli": "^8.3.5",
+    "@jest/core": "^26.0.1",
+    "@types/jest": "^25.2.3",
+    "ava": "^3.8.2",
+    "babel-jest": "^26.0.1",
+    "commitlint": "^8.3.5",
+    "eslint": "^7.1.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "jest-util": "^26.0.1",
+    "lint-staged": "^10.2.9",
+    "markdownlint-cli": "^0.23.1",
+    "only-allow": "^1.0.0",
+    "prettier": "^2.0.5",
+    "regenerator-runtime": "^0.13.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@live/wallaby-config",
+  "version": "0.1.0",
+  "main": "wallaby.live.jest.manual.js",
+  "dependencies": {
+    "babel-workspace-package-import-rewrite": "workspace:^0.1.0",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "get-workspace-pkgs-sync": "workspace:^0.1.0",
+    "read-ini-file": "^3.0.0",
+    "read-pkg": "^5.2.0",
+    "yargs-parser": "^20.2.5"
+  }
+}

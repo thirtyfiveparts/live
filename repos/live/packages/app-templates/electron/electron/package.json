@@ -1,0 +1,23 @@
+{
+  "name": "@live/electron-template-electron",
+  "version": "0.1.0",
+  "description": "A minimal Electron application",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "ELECTRON_START_URL=http://localhost:3000 electron ."
+  },
+  "dependencies": {
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "@live/tsconfig": "workspace:^0.1.0"
+  },
+  "devDependencies": {
+    "electron": "^9.1.2"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  }
+}

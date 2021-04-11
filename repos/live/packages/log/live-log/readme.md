@@ -1,0 +1,3 @@
+# live-log
+
+> Logging abstraction

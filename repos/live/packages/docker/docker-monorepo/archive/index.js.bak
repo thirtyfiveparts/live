@@ -1,0 +1,2 @@
+    await streamWrite(child.stdin, dockerfileStr + '\r\n')
+    await streamEnd(child.stdin)

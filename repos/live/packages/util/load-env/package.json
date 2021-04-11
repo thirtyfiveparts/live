@@ -1,0 +1,26 @@
+{
+  "name": "@live/load-env",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "babel src -d lib -s -w",
+    "build": "babel src -d lib -s --delete-dir-on-start"
+  },
+  "dependencies": {
+    "@live/app-root": "^0.0.1",
+    "@live/babel-preset-live-node-simple": "^0.1.0",
+    "@live/log": "^0.1.0",
+    "@live/log-style": "^0.1.0",
+    "chalk": "^2.4.2",
+    "dotenv": "^8.2.0",
+    "enquirer": "^2.0.7",
+    "indent-string": "^3.2.0",
+    "lodash.fromPairs": "npm:lodash.frompairs@^4.0.1",
+    "tildify": "^1.2.0",
+    "yargs-parser": "^11.1.0"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-simple"
+    ]
+  }
+}

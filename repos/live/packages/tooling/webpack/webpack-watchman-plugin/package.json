@@ -1,0 +1,24 @@
+{
+  "name": "@vjpr/webpack-watchman-plugin",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "async": "^3.2.0",
+    "debug": "^4.3.1",
+    "fb-watchman": "^2.0.1"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

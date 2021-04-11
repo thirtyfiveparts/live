@@ -1,0 +1,9 @@
+{
+  "name": "@live/app-template.full-stack-graphql-react.web.docs",
+  "version": "0.1.0",
+  "dependencies": {
+  },
+  "babel": {
+    "presets": []
+  }
+}

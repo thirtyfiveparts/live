@@ -1,0 +1,8 @@
+{
+  "name": "@live/time.macro",
+  "version": "0.1.0",
+  "dependencies": {
+    "@babel/generator": "^7.3.0",
+    "babel-plugin-macros": "^2.4.5"
+  }
+}

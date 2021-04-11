@@ -1,0 +1,69 @@
+{
+  "name": "@live/graphql-codegen-cli",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "description": "Template for creating cli tools.",
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'"
+  },
+  "bin": {
+    "live-graphql-codegen-watcher": "bin/index.js"
+  },
+  "binDescription": {
+    "live-graphql-codegen-watcher": "Example cli tool."
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@graphql-codegen/core": "^1.17.9",
+    "@graphql-codegen/schema-ast": "^1.18.1",
+    "@graphql-codegen/typescript": "^1.20.0",
+    "@graphql-codegen/typescript-operations": "^1.17.13",
+    "@graphql-codegen/typescript-react-apollo": "^2.2.1",
+    "@graphql-tools/code-file-loader": "^6.2.6",
+    "@graphql-tools/graphql-file-loader": "^6.2.7",
+    "@graphql-tools/load": "^6.2.5",
+    "@graphql-tools/url-loader": "^6.8.0",
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/get-workspace-pkgs": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "@live/watchman-wrapper": "workspace:^0.1.0",
+    "await-to": "^0.1.0",
+    "chalk": "^4.1.0",
+    "debounce-promise": "^3.1.2",
+    "detective-typescript": "^7.0.0",
+    "enquirer": "^2.3.0",
+    "fs-extra": "^9.1.0",
+    "graphql-config": "^3.2.0",
+    "lodash": "^4.17.20",
+    "node-notifier": "^9.0.0",
+    "p-debounce": "^3.0.1",
+    "prettier": "^2.2.1",
+    "tildify": "^2.0.0",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    },
+    "watch": {
+      "watches": [
+        {
+          "scope": "repo",
+          "bin": "default",
+          "script": "main",
+          "npm": "start"
+        }
+      ]
+    }
+  }
+}

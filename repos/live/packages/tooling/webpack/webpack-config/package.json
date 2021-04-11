@@ -1,0 +1,39 @@
+{
+  "name": "@live/webpack-config",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@live/webpack-config": "workspace:^0.1.0",
+    "@vjpr/webpack-extension-reloader": "workspace:^1.1.4-vjpr.2",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^1.3.9",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-config-dump-plugin": "^3.0.1",
+    "webpack-merge": "^5.7.3"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    },
+    "barrel": {
+      "configs": [
+        {
+          "dir": "./src/blocks/plugins",
+          "structure": "flat"
+        }
+      ]
+    }
+  },
+  "peerDependencies": {
+    "webpack": "^5.26.3"
+  }
+}

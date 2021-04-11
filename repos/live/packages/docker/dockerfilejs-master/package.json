@@ -1,0 +1,36 @@
+{
+  "name": "@live/dockerfilejs",
+  "version": "1.0.7",
+  "description": "Dockerfile-js, render well-formed Dockerfiles.",
+  "main": "dockerfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha ./test --recursive",
+    "test-no-colors": "mocha ./test --recursive --no-colors",
+    "test-w-coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matutter/dockerfilejs.git"
+  },
+  "engine": "node 4.4.1",
+  "keywords": [
+    "docker",
+    "dockerfile",
+    "generator"
+  ],
+  "author": "matutter <mcutter.svc@gmail.com> (https://www.npmjs.com/profile/matutter)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matutter/dockerfilejs/issues"
+  },
+  "homepage": "https://github.com/matutter/dockerfilejs#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  }
+}

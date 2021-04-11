@@ -1,0 +1,5 @@
+# This babel plugin package is used to transpile other files and must
+#   always be transpiled before them. For this reason, we check in the
+#   compiled source.
+# TODO: Not sure if this works.
+!./lib

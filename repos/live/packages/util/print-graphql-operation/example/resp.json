@@ -1,0 +1,220 @@
+{
+  "variables": {
+    "entryGt": "2018-07-20T10:31:15.111Z",
+    "entryLt": "2018-07-21T10:31:15.111Z"
+  },
+  "extensions": {},
+  "operationName": null,
+  "query": {
+    "kind": "Document",
+    "definitions": [
+      {
+        "kind": "OperationDefinition",
+        "operation": "query",
+        "variableDefinitions": [
+          {
+            "kind": "VariableDefinition",
+            "variable": {
+              "kind": "Variable",
+              "name": {
+                "kind": "Name",
+                "value": "entryGt"
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String"
+                }
+              }
+            }
+          },
+          {
+            "kind": "VariableDefinition",
+            "variable": {
+              "kind": "Variable",
+              "name": {
+                "kind": "Name",
+                "value": "entryLt"
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String"
+                }
+              }
+            }
+          }
+        ],
+        "directives": [],
+        "selectionSet": {
+          "kind": "SelectionSet",
+          "selections": [
+            {
+              "kind": "Field",
+              "name": {
+                "kind": "Name",
+                "value": "containerGroups"
+              },
+              "arguments": [],
+              "directives": [],
+              "selectionSet": {
+                "kind": "SelectionSet",
+                "selections": [
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "id"
+                    },
+                    "arguments": [],
+                    "directives": []
+                  },
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "containerNumber"
+                    },
+                    "arguments": [],
+                    "directives": []
+                  },
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "nameDe"
+                    },
+                    "arguments": [],
+                    "directives": []
+                  },
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "dwellTimeWarehouse"
+                    },
+                    "arguments": [],
+                    "directives": []
+                  },
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "dwellTimeProduction"
+                    },
+                    "arguments": [],
+                    "directives": []
+                  },
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "__typename"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "kind": "Field",
+              "name": {
+                "kind": "Name",
+                "value": "aggregatedDwellTimeContainerGroups"
+              },
+              "arguments": [
+                {
+                  "kind": "Argument",
+                  "name": {
+                    "kind": "Name",
+                    "value": "entryGt"
+                  },
+                  "value": {
+                    "kind": "Variable",
+                    "name": {
+                      "kind": "Name",
+                      "value": "entryGt"
+                    }
+                  }
+                },
+                {
+                  "kind": "Argument",
+                  "name": {
+                    "kind": "Name",
+                    "value": "entryLt"
+                  },
+                  "value": {
+                    "kind": "Variable",
+                    "name": {
+                      "kind": "Name",
+                      "value": "entryLt"
+                    }
+                  }
+                }
+              ],
+              "directives": [],
+              "selectionSet": {
+                "kind": "SelectionSet",
+                "selections": [
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "containerNumber"
+                    },
+                    "arguments": [],
+                    "directives": []
+                  },
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "dwellTimeWarehouse"
+                    },
+                    "arguments": [],
+                    "directives": []
+                  },
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "dwellTimeProduction"
+                    },
+                    "arguments": [],
+                    "directives": []
+                  },
+                  {
+                    "kind": "Field",
+                    "name": {
+                      "kind": "Name",
+                      "value": "__typename"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "loc": {
+      "start": 0,
+      "end": 334,
+      "source": {
+        "body": "\n  query($entryGt: String!, $entryLt: String!) {\n    containerGroups {\n      id\n      containerNumber\n      nameDe\n      dwellTimeWarehouse\n      dwellTimeProduction\n    }\n    aggregatedDwellTimeContainerGroups(entryGt: $entryGt, entryLt: $entryLt) {\n      containerNumber\n      dwellTimeWarehouse\n      dwellTimeProduction\n    }\n  }\n",
+        "name": "GraphQL request",
+        "locationOffset": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    }
+  }
+}

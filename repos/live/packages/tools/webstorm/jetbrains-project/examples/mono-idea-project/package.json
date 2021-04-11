@@ -1,0 +1,10 @@
+{
+  "name": "mono-idea-project",
+  "version": "0.0.1",
+  "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}

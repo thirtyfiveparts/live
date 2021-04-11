@@ -1,0 +1,84 @@
+{
+  "name": "replant",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "description": "Template for creating cli tools.",
+  "scripts": {
+    "start": "node bin/index.js",
+    "dev": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "babel src -d lib -s -w -x .ts,.js",
+    "build": "babel src -d lib -s --delete-dir-on-start -x .ts,.js",
+    "build-old": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'"
+  },
+  "bin": {
+    "replant": "bin/index.js"
+  },
+  "binDescription": {
+    "replant": "Example cli tool."
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@jest/test-utils": "^0.0.0",
+    "@jest/types": "^26.6.2",
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/get-workspace-pkgs": "workspace:^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "await-to": "^0.1.0",
+    "babel-loader": "^8.2.2",
+    "chalk": "1.1.3",
+    "cwd": "0.9.1",
+    "debounce-promise": "^3.1.2",
+    "debug": "2.2.0",
+    "dependency-tree": "4.0.0",
+    "diff": "2.2.2",
+    "flat": "2.0.0",
+    "fs-extra": "0.30.0",
+    "fs-tree-diff": "0.4.4",
+    "globby": "4.0.0",
+    "indent-string": "2.1.0",
+    "inquirer-promise": "0.0.3",
+    "jest-resolve-dependencies": "^26.6.3",
+    "js-yaml": "3.6.0",
+    "jscodeshift": "0.3.20",
+    "jsondiffpatch": "0.1.43",
+    "lodash": "4.11.1",
+    "madge": "0.5.3",
+    "mem-fs": "1.1.2",
+    "mem-fs-editor": "2.2.0",
+    "mock-fs": "3.8.0",
+    "mountfs": "0.2.1",
+    "object-hash": "1.1.2",
+    "p-debounce": "^3.0.1",
+    "pify": "^5.0.0",
+    "precinct": "2.5.1",
+    "prettyjson": "1.1.3",
+    "read-pkg-up": "1.0.1",
+    "tmp": "0.0.28",
+    "user-home": "2.0.0",
+    "walk-sync": "0.2.6",
+    "webpack": "1.13.0",
+    "webpack-dependency-tree": "0.0.2",
+    "webpack-node-externals": "1.1.0",
+    "yargs": "4.6.0"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    },
+    "template": {
+      "exclude": [
+        "docs-shared",
+        "instructions.md"
+      ]
+    }
+  }
+}

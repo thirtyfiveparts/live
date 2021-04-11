@@ -1,0 +1,12 @@
+{
+  // NOTE: Without this default imports break when running tests in packages.
+  "extends": "./node_modules/@live/tsconfig/tsconfig.base.json",
+  // --
+
+  // Don't compile any files in root package.
+  "files": [],
+  // --
+
+  "exclude": ["node_modules"],
+  "references": []
+}

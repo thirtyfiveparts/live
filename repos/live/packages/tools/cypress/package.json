@@ -1,0 +1,23 @@
+{
+  "name": "@live/cypress",
+  "version": "0.1.0",
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@pnpm/find-workspace-packages": "^2.3.17",
+    "@pnpm/logger": "^3.2.2",
+    "await-to": "^0.1.0",
+    "cypress": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "find-packages": "^7.0.17",
+    "find-up": "^5.0.0",
+    "fs-extra": "^9.0.1",
+    "get-port": "^5.1.1",
+    "globby": "^11.0.1",
+    "lodash": "^4.17.20"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  }
+}

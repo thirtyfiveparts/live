@@ -1,0 +1,13 @@
+{
+  "name": "@live/remark-docusaurus-toc-plugin",
+  "version": "0.1.0",
+  "dependencies": {
+    "@babel/parser": "*",
+    "@babel/traverse": "*",
+    "escape-html": "*",
+    "json5": "^2.2.0",
+    "mdast-util-to-string": "*",
+    "stringify-object": "*",
+    "unist-util-visit": "*"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "lsd",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "description": "Print info about projects in a directory from readme files.",
+  "scripts": {
+    "start": "node bin/index.js",
+    "dev": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "babel src -d lib -s -w -x .ts,.js",
+    "build": "babel src -d lib -s --delete-dir-on-start -x .ts,.js",
+    "build-old": "babel src -d dist --ignore '**/*.spec.js,**/*.stories.js'"
+  },
+  "bin": {
+    "lsd": "bin/index.js"
+  },
+  "binDescription": {
+    "lsd": "Example cli tool."
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "dependencies": {
+    "@live/ava-config": "workspace:^0.1.0",
+    "@live/babel-preset-live-node-basic": "^0.1.0",
+    "@live/simple-cli-helper": "workspace:^0.1.0",
+    "chalk": "^4.1.0",
+    "cli-table": "^0.3.6",
+    "fs-extra": "^9.1.0",
+    "globby": "^11.0.3",
+    "mdast-util-from-markdown": "^0.8.5",
+    "mdast-util-to-markdown": "^0.6.5",
+    "remark-parse": "^9.0.0",
+    "rxjs": "^6.6.6",
+    "unified": "^9.2.1",
+    "unist-util-visit": "^2.0.3",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "workspace:^0.1.0"
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    },
+    "template": {
+      "exclude": [
+        "docs-shared",
+        "instructions.md"
+      ]
+    }
+  }
+}

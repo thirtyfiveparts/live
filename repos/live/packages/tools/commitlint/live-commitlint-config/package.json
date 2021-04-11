@@ -1,0 +1,16 @@
+{
+  "name": "@live/commitlint-config",
+  "version": "0.1.0",
+  "main": "commitlint.config.live.js",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/prompt-cli": "^8.3.5",
+    "conventional-changelog-conventionalcommits": "^4.3.0"
+  },
+  "dependencies": {
+    "@commitlint/lint": "^8.3.5",
+    "@commitlint/load": "^8.3.5",
+    "@commitlint/read": "^8.3.4"
+  }
+}

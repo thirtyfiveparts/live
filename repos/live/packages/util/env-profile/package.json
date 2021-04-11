@@ -1,0 +1,19 @@
+{
+  "name": "@live/env-profile",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "babel src -d lib -s -w",
+    "build": "babel src -d lib -s --delete-dir-on-start"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-simple"
+    ]
+  },
+  "dependencies": {
+    "inquirer": "^6.2.0",
+    "yargs-parser": "^11.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@live/babel-preset-live-node-simple": "^0.1.0"
+  }
+}

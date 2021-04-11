@@ -1,0 +1,28 @@
+{
+  "name": "@live/app-template.app.react",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "live-react"
+  },
+  "dependencies": {
+    "@live/babel-preset-live-node-basic": "workspace:^0.1.0",
+    "@live/react-app": "workspace:^0.1.0",
+    "@live/webpack-config": "workspace:^0.1.0",
+    "webpack": "^5.28.0",
+    "webpack-merge": "^5.7.3"
+  },
+  "devDependencies": {
+    "@live/tsconfig": "*"
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-live-node-basic"
+    ]
+  },
+  "live": {
+    "docusaurus": {
+      "enable": false
+    }
+  }
+}

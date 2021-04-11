@@ -1,0 +1,8 @@
+{
+  "name": "@live/markdownlint-config",
+  "version": "0.1.0",
+  "main": "markdownlint.config.live.js",
+  "dependencies": {
+
+  }
+}

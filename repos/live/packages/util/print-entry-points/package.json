@@ -1,0 +1,50 @@
+{
+  "name": "print-entry-points",
+  "version": "0.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "bin": {
+    "print-entry-points": "cli.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "bin/index.js",
+    "test": "ava"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "babel": {
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "cwd": "babelrc",
+          "root": [
+            "./src"
+          ]
+        }
+      ]
+    ]
+  },
+  "keywords": [],
+  "dependencies": {
+    "babel-plugin-module-resolver": "^3.0.0-beta.5",
+    "@babel/register": "7.0.0",
+    "@babel/runtime": "7.0.0",
+    "chalk": "^2.3.2",
+    "color": "^3.0.0",
+    "diff": "^3.4.0",
+    "flow-config-parser": "^0.3.0",
+    "gitignore-parser": "^0.0.2",
+    "js-yaml": "^3.10.0",
+    "lodash": "^4.17.5",
+    "read-json-file": "^1.0.1",
+    "yaml-js": "^0.2.3"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@live/webstorm-webpack-config",
+  "version": "0.1.0",
+  "main": "webstorm.webpack.config.live.js",
+  "dependencies": {
+
+  }
+}

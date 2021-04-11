@@ -1,0 +1,42 @@
+{
+  "name": "@live/electron-template-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@live/electron-template-shared": "workspace:^0.1.0",
+    "@live/tsconfig": "workspace:^0.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.45",
+    "@types/react-dom": "^16.9.8",
+    "is-electron": "^2.2.0",
+    "is-electron-renderer": "^2.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^11.0.0"
+  }
+}

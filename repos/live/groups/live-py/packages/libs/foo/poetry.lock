@@ -1,0 +1,35 @@
+[[package]]
+name = "baz"
+version = "0.1.0"
+description = ""
+category = "main"
+optional = false
+python-versions = "^3.8"
+develop = true
+
+[package.dependencies]
+cowsay = ">=2.0.3,<3.0.0"
+
+[package.source]
+type = "directory"
+url = "../baz"
+
+[[package]]
+name = "cowsay"
+version = "2.0.3"
+description = "The famous cowsay for GNU/Linux is now available for python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "b6cd68ba67ec04f6e0aefa31e9c5a8d755c8bbb0515ed0d5b6a74e71d8c9a131"
+
+[metadata.files]
+baz = []
+cowsay = [
+    {file = "cowsay-2.0.3-py2.py3-none-any.whl", hash = "sha256:7ec3ec1bb085cbb788b0de1e762941b4469faf41c6cdbec08a7ac072a7d1d6eb"},
+    {file = "cowsay-2.0.3.tar.gz", hash = "sha256:debde99bae664bd91487613223c1cb291170d8703bf7d524c3a4877ad37b4dad"},
+]

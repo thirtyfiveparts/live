@@ -1,0 +1,6 @@
+{
+  "name": "@live/prettier-config",
+  "version": "0.1.1",
+  "main": "./prettier.config.live.js",
+  "dependencies": {}
+}

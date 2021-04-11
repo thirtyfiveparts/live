@@ -1,0 +1,8 @@
+{
+  "extends": "./node_modules/@live/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    // Fixes: type-graphql = Unable to resolve signature of method decorator when called as an expression
+    "target": "ES2016"
+  }
+}

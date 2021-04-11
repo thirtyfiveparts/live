@@ -1,0 +1,111 @@
+// Currently not in use.
+// TODO: Double-check because I think it is.
+
+/*
+
+# Grouping
+
+See: https://www.typescriptlang.org/tsconfig
+
+# Babel
+
+This file is not used when running the code as we use @babel/typescript.
+
+It is only used for:
+
+- IntelliJ for type-checking only
+- Building declarations for automatic api doc generation.
+
+# Babel Config
+
+From this blog post we have marked the settings they recommend below using `#babel-recommendation`.
+See: https://blogs.msdn.microsoft.com/typescript/2018/08/27/typescript-and-babel-7/
+
+*/
+{
+  "compilerOptions": {
+    // Project Options
+    ////////////////////////////////////////////////////////////////////////////
+
+    // #babel-recommendation
+    // Target latest version of ECMAScript.
+    "target": "esnext",
+    //"target": "es6", // 20210202Tue
+
+    // #babel-recommendation
+    // Process and infer types from .js files.
+    "allowJs": true,
+
+    // #babel-recommendation
+    // Disallow features that require cross-file information for emit.
+    //   ...because we use babel to compile each file individually instead of all-at-once.
+    "isolatedModules": true,
+
+    // #babel-recommendation
+    // Don't emit; allow Babel to transform files.
+    // NOTE: This must be disabled so we can set `emitDeclarationOnly` to generate `.d.ts` files for api extractor (docs).
+    //"noEmit": true,
+    // --
+
+    "module": "commonjs",
+
+    "declaration": true,
+
+    "jsx": "react",
+
+    "removeComments": true,
+
+    "lib": ["es6", "es2015", "dom"],
+
+    // Strict Checks
+    ////////////////////////////////////////////////////////////////////////////
+
+    // #babel-recommendation
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strict": true,
+
+    "noImplicitAny": false,
+
+    // Module Resolution
+    ////////////////////////////////////////////////////////////////////////////
+
+    // #babel-recommendation
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+
+    // #babel-recommendation
+    // Import non-ES modules as default imports.
+    // E.g. For: module.exports = 'foo' we can write `import foo as 'foo'`.
+    "esModuleInterop": true,
+
+    "allowSyntheticDefaultImports": true,
+
+    // Linter Checks
+    ////////////////////////////////////////////////////////////////////////////
+
+    // Experimental
+    ////////////////////////////////////////////////////////////////////////////
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // Source Maps
+    ////////////////////////////////////////////////////////////////////////////
+
+    "sourceMap": true,
+
+    // Command Line
+    ////////////////////////////////////////////////////////////////////////////
+
+    "pretty": true,
+
+    // Advanced
+    ////////////////////////////////////////////////////////////////////////////
+
+    "noLib": false,
+
+    //"skipLibCheck": true, // See @live/tsconfig.json for notes.
+
+    ////////////////////////////////////////////////////////////////////////////
+  }
+}

@@ -1,0 +1,1 @@
+module.exports = require('./tools/live/live.config')

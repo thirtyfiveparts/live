@@ -1,0 +1,108 @@
+{
+  "name": "@live/app-templates.web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Template - Full Stack GraphQL React - Frontend",
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@apollo/client": "^3.2.7",
+    "@craco/craco": "^5.8.0",
+    "@live/babel-preset-react": "workspace:^0.1.0",
+    "@live/react-ide-helper": "workspace:^0.1.0",
+    "@loadable/component": "^5.13.2",
+    "@brag/backend.schema": "workspace:^0.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@types/react": "^16.9.45",
+    "@types/react-dom": "^16.9.8",
+    "antd": "^4.8.4",
+    "await-to": "^0.1.0",
+    "classnames": "^2.2.6",
+    "concurrently": "^5.3.0",
+    "country-list": "^2.2.0",
+    "craco-less": "^1.17.0",
+    "cypress-localstorage-commands": "^1.2.4",
+    "cypress-terminal-report": "^2.3.0",
+    "eslint-webpack-plugin": "^2.4.1",
+    "faker": "^5.1.0",
+    "feather-icons-react": "^0.4.1",
+    "find-up": "^5.0.0",
+    "history": "^5.0.0",
+    "http-proxy-middleware": "^1.0.6",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
+    "lorem-ipsum": "^2.0.3",
+    "masonic": "^3.3.10",
+    "query-string": "^6.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-emoji-render": "^1.2.4",
+    "react-hotjar": "^2.2.1",
+    "react-lazyload": "^3.0.0",
+    "react-moment": "^1.0.0",
+    "react-router": "^6.0.0-beta.0",
+    "react-router-dom": "6.0.0-beta.0",
+    "react-scripts": "^4.0.0",
+    "react-sortable-tree": "^2.8.0",
+    "recoil": "^0.1.2",
+    "recoilize": "^0.8.0",
+    "short-uuid": "^4.1.0",
+    "showdown": "^1.9.1",
+    "speed-measure-webpack-plugin": "^1.3.3",
+    "styled-components": "^5.2.0",
+    "tailwindcss": "^2.0.1",
+    "twin.macro": "^2.0.6",
+    "typed-css-modules-webpack-plugin": "^0.2.0",
+    "use-query-params": "^1.1.8",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpack-config-dump-plugin": "^3.0.1",
+    "webpack-disk-plugin": "^0.0.2",
+    "webpack-external-react": "^1.1.45",
+    "webpack-stats-plugin": "^1.0.2",
+    "zoomooz": "^1.0.0"
+  },
+  "scripts": {
+    "watch": "./scripts/watch.js",
+    "watch-cra": "FORCE_COLOR=true npm run start-craco | cat",
+    "start-craco": "craco start --verbose",
+    "start": "./scripts/watch.js",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "graphql-codegen:watch": "graphql-codegen --watch",
+    "benchmark": "npx artillery run TODO"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@live/babel-preset-react"
+    ]
+  },
+  "live": {
+    "dependencies": {
+      "@sidekicks/backend.server": true
+    },
+    "cypress": true,
+    "docusaurus": {
+      "enable": true
+    }
+  },
+  "devDependencies": {
+    "@live/tsconfig": "^0.1.0",
+    "@testing-library/cypress": "^7.0.2",
+    "babel-loader": "^8.1.0",
+    "inspectpack": "^4.5.2",
+    "react-refresh": "^0.9.0"
+  }
+}

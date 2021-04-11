@@ -1,0 +1,12 @@
+{
+  "name": "@live/remark-docusaurus-monorepo-refs",
+  "version": "0.1.0",
+  "dependencies": {
+    "@live/docusaurus-root-docs": "workspace:^0.1.0",
+    "find-up": "^5.0.0",
+    "get-workspace-pkgs-sync": "workspace:^0.1.0",
+    "mdast-util-find-and-replace": "^1.0.0",
+    "mdast-util-to-string": "^2.0.0",
+    "unist-util-visit": "^2.0.3"
+  }
+}
